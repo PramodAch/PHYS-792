@@ -1,0 +1,24 @@
+:volu hall BOX 12*m 12*m 12*m G4_AIR
+:volu base TUBS 6*m 8*m 3*m 0 360 G4_BRASS
+:rotm r000 0 0 0
+:volu base1 CONE 2*m 2.5*m 3*m 3.5*m 3*m G4_BRASS
+:volu base2 ORB 4*m G4_BRASS
+:volu base3 TRD  5*m 5*m 6*m 6*m 3*m G4_Si
+
+
+
+
+:place base2 1 hall r000 0 0 4*m
+:place base2 2 hall r000 0 0 -4*m
+
+:place base1 1 hall r000 0 0 0
+:place base 1 hall r000 0 0 0
+:place base3 1 hall r000 0 0 5*m
+:place base3 2  hall r000 0 0 -5*m
+
+:color base 1.0 0.0 1.8
+:color base1 0 0.1 0.8
+:color base2 0.2 0.2 0.3
+:color base3 1.0 0.0 0.0
+
+:vis hall OFF
