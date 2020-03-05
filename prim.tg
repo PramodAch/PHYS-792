@@ -1,0 +1,20 @@
+:volu world BOX 1*m 1*m 1*m G4_AIR
+
+:rotm r000 0 0 0
+
+:solid boxa BOX 5*cm 5*cm 5*cm
+:solid boxb BOX 4.5*cm 4.5*cm 4.5*cm
+:solid prim subtraction boxa boxb r000 0 0 0
+
+ :volu frame prim  G4_STAINLESS-STEEL
+//:volu gear2 bas6 G4_BRASS
+//:volu gear3 bas6 G4_PARAFFIN
+
+:place frame 1 world r000 0 0 0
+//:place gear2 2 world r000 -8*cm  8*cm 12*cm
+//:place gear3 3 world r000  8*cm  8*cm -12*cm
+
+:color frame 0.5 0.5 0.5
+//:color gear2 0   0.5 0.5
+//:color gear3 0   0.5 0
+:vis world OFF
